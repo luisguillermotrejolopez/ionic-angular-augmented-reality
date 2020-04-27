@@ -13,10 +13,10 @@ export class AppComponent implements OnInit {
   public selectedIndex = 0;
   public appPages = [
     {
-      title: 'Inbox',
-      url: '/folder/Inbox',
+      title: 'Realidad Aumentada',
+      url: '/folder/Realidad Aumentada',
       icon: 'mail'
-    },
+    }/*,
     {
       title: 'Outbox',
       url: '/folder/Outbox',
@@ -41,9 +41,9 @@ export class AppComponent implements OnInit {
       title: 'Spam',
       url: '/folder/Spam',
       icon: 'warning'
-    }
+    }*/
   ];
-  public labels = ['Family', 'Friends', 'Notes', 'Work', 'Travel', 'Reminders'];
+  //public labels = ['Family', 'Friends', 'Notes', 'Work', 'Travel', 'Reminders'];
 
   constructor(
     private platform: Platform,

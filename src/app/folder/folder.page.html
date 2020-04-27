@@ -1,5 +1,5 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
+  <ion-toolbar color="primary">
     <ion-buttons slot="start">
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
@@ -7,15 +7,15 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">{{ folder }}</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <div id="container">
-    <strong class="capitalize">{{ folder }}</strong>
-    <p>Explore <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+<ion-content>
+  <iframe id="modelFrame" src="assets/aframe/aframe-ar.html" title="Test"></iframe>
 </ion-content>
+
+<ion-footer class="ion-text-center">
+  <ion-button color="primary" class="ion-text-capitalize" (click)="showModel('local')">
+    Mostrar Modelo 3D Local
+  </ion-button>
+  <ion-button color="primary" class="ion-text-capitalize" (click)="showModel('remote')">
+    Mostrar Modelo 3D Remoto
+  </ion-button>
+</ion-footer>

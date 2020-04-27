@@ -1,0 +1,13 @@
+<!doctype HTML>
+<html>
+  <script src="scripts/aframe.min.js"></script>
+  <script src="scripts/aframe-ar.js"></script>
+  <body style='margin : 0px; overflow: hidden;'>
+    <a-scene embedded arjs='debugUIEnabled: false' vr-mode-ui='enabled: false'>
+      <a-marker preset='hiro'>
+        <a-entity id="modeloGltf" gltf-model=""></a-entity>
+      </a-marker>
+      <a-entity camera></a-entity>
+    </a-scene>
+  </body>
+</html>
